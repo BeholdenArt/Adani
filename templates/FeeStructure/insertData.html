@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Insert Data</title>
+	</head>
+	<body>
+		<form action="insert-data" method="post">
+			{% csrf_token %}
+			<label for="receipt-number">Receipt Number: </label>
+			<input
+				type="text"
+				name="receipt-number"
+				id="receipt-number"
+				placeholder="Enter Receipt Number"
+			/>
+			<br />
+			<label for="received-sum">Received Sum: </label>
+			<input
+				type="number"
+				name="received-sum"
+				id="received=sum"
+				placeholder="Enter received sum"
+			/>
+			<br />
+			<label for="submission-date">Date: </label>
+			<input
+				type="date"
+				name="submission-date"
+				id="submission-date"
+				value="2022-07-07"
+			/><br />
+			<label for="student-name">Student Name: </label>
+			<input
+				type="text"
+				name="student-name"
+				id="student-name"
+				placeholder="Enter student name"
+			/>
+			<br />
+			<label for="enrolment-number">Enrolment Number: </label>
+			<input
+				type="number"
+				name="enrolment-number"
+				id="enrolment-number"
+				placeholder="Enter enrolment number"
+			/>
+			<br />
+			<label for="semester-select">Select Semester: </label>
+			<select name="semester-select" id="semester-select" required>
+				<optgroup label="Year 1">
+					<option value="SEM1">Semester 1</option>
+					<option value="SEM2">Semester 2</option>
+				</optgroup>
+				<optgroup label="Year 2">
+					<option value="SEM3">Semester 3</option>
+					<option value="SEM4">Semester 4</option>
+				</optgroup>
+				<optgroup label="Year 3">
+					<option value="SEM5">Semester 5</option>
+					<option value="SEM6">Semester 6</option>
+				</optgroup>
+				<optgroup label="Year 4">
+					<option value="SEM7">Semester 7</option>
+					<option value="SEM8">Semester 8</option>
+				</optgroup>
+			</select>
+			<br />
+			<label for="stream-select">Stream: </label>
+			<select name="stream-select" id="stream-select">
+				<option value="ICT">ICT</option>
+				<option value="CIVIL">Civil</option>
+				<option value="ELE">Electrical</option>
+				<option value="CS">CS</option>
+			</select>
+			<br />
+			<label for="payment-mode">Payment Mode: </label>
+			<select name="payment-mode" id="payment-mode">
+				<option value="CHEQUE">Cheque</option>
+				<option value="DRAFT">Draft</option>
+				<option value="PAYTM">Paytm</option>
+			</select>
+			<br />
+			<label for="transaction-number">Transaction Number: </label>
+			<input
+				type="number"
+				name="transaction-number"
+				id="transaction-number"
+				placeholder="Enter Transaction number"
+			/>
+			<br />
+			<label for="cheque-date">Cheque/Draft Date: </label>
+			<input
+				type="date"
+				name="cheque-date"
+				id="cheque-date"
+				value="2022-07-07"
+			/>
+			<br />
+
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>

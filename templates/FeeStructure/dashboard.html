@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<title>Landing Page</title>
+	</head>
+	<body>
+		<!-- Example Code -->
+
+		<div class="row row-cols-1 row-cols-md-2 g-4">
+			{% comment %} ENTER DATA {% endcomment %}
+			<a href="insert-data">
+				<div class="col">
+					<div class="card">
+						{# <img src="..." class="card-img-top" alt="..." />#}
+						<div class="card-body">
+							<h5 class="card-title">Insert Data</h5>
+							<p class="card-text">
+								Insert the data from the excel sheet provided here.
+							</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			{% comment %} RETRIEVE DATA {% endcomment %}
+			<a href="retrieve-data">
+				<div class="col">
+					<div class="card">
+						{# <img src="..." class="card-img-top" alt="..." />#}
+						<div class="card-body">
+							<h5 class="card-title">See data</h5>
+							<p class="card-text">
+								Retrieve the data from the database using enrolment number
+							</p>
+						</div>
+					</div>
+				</div>
+			</a>
+
+		<!-- End Example Code -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
